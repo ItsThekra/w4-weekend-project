@@ -1,0 +1,75 @@
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+.user-info {
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.user-info h2 {
+    margin: 0;
+}
+
+.comments-section {
+    margin-top: 30px;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comment-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment-form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #45a049;
+}
+
+.comments-container {
+    margin-top: 20px;
+}
+
+.comment {
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة الملف الشخصي</title>
+    <link rel="icon" href="./images/index-logo.png">
+    <link rel="stylesheet" href="./css/profile.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h1>الملف الشخصي</h1>
+
+        <div class="user-info">
+            <h2>مرحباً، <span id="user-name"></span></h2>
+            <p><strong>البريد الإلكتروني: </strong><span id="user-email"></span></p>
+        </div>
+
+        <div class="comments-section">
+            <h2>تعليقاتك</h2>
+            <div class="comments-container" id="comments-container"></div>
+
+            <div class="comment-form">
+                <textarea id="comment-text" placeholder="اكتب تعليقك هنا..." rows="4" cols="50"></textarea>
+                <button id="submit-comment">أضف تعليق</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/profile.js"></script>
+</body>
+</html>

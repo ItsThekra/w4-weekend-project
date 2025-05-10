@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Tajawal:wght@200;300;400;500;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Yellowtail&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tajawal";
+
+}
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to left, #6a11cb, #072e70); 
+
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    width: 35vw;
+    height: 90vh;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url('https://images.pexels.com/photos/7848987/pexels-photo-7848987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover no-repeat;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+.form-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    gap: 1.8rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-group label {
+    font-size: 1rem;
+}
+
+.input-group input {
+    border: none;
+    border-bottom: 0.1em solid #ccc;
+    outline: none;
+    font-size: 1rem;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.options a {
+    color: #888;
+    text-decoration: none;
+}
+
+.options a:hover {
+    color: #ff7b00; 
+}
+
+.new-user {
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+    flex-direction: column;
+    align-items: center;
+}
+.btn {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+.btn a {
+   text-decoration: none;
+   background: linear-gradient(to left, #6a11cb, #2575fc); 
+   color: #ffffff;
+   width: 150px;
+   text-align: center;
+   height: 6vh;
+   align-content: center;
+   border-radius: 20px;
+}
+.btn a:hover {
+    background: linear-gradient(to left, #2575fc, #6a11cb); 
+
+}
+
+/* Media Queries for responsive design */
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90vw;
+        height: auto;
+    }
+
+    .header h2 {
+        font-size: 1.5rem;
+    }
+
+    .input-group input {
+        font-size: 0.9rem;
+    }
+
+    .btn a {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .container {
+        width: 80vw;
+        height: 75vh;
+    }
+
+    .header h2 {
+        font-size: 1.8rem;
+    }
+
+    .input-group input {
+        font-size: 1rem;
+    }
+
+    .btn a {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .container {
+        width: 60vw;
+        height: 75vh;
+    }
+
+    .header h2 {
+        font-size: 2rem;
+    }
+
+    .input-group input {
+        font-size: 1rem;
+    }
+
+    .btn a {
+        width: 50%;
+    }
+}

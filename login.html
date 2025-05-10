@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <link rel="icon" href="./images/index-logo.png">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>تسجيل الدخول</h2>
+        </div>
+        <div class="form-section">
+            <form class="login-form">
+                <div class="input-group">
+                    <input type="text" id="username" placeholder="أدخل اسم المستخدم" required>
+                    <label for="username">اسم المستخدم</label>
+                    <div id="username-error" class="error"></div>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="أدخل كلمة المرور" required>
+
+                    <label for="password">كلمة المرور</label>
+                    <div id="password-error" class="error"></div>
+                </div>
+                <div class="options">
+                    <label><input type="checkbox">تذكرني</label>
+                    <a href="#">هل نسيت كلمة المرور؟</a>
+                </div>
+                <div class="new-user">
+                    <button type="submit" class="login-btn">تسجيل الدخول</button>
+                    <p>ليس لديك حساب؟ <a href="./signUp.html" target="_blank"><span>سجل الآن</span></a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./js/login.js"></script>
+</body>
+</html>

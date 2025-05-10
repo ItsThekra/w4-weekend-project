@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to left, #6a11cb, #072e70);
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    width: 80vw;
+    max-width: 500px;
+    height: 85vh;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url('https://images.pexels.com/photos/7848987/pexels-photo-7848987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}
+
+.header h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+.form-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 1.8rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column-reverse; 
+    gap: 0.5rem;
+    text-align: right;
+}
+
+.input-group label {
+    font-size: 1rem;
+}
+
+.input-group input {
+    border: none;
+    border-bottom: 0.1em solid #ccc;
+    outline: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    text-align: right;
+}
+
+.error {
+    color: red; 
+    font-size: 0.8rem; 
+    margin-bottom: 5px; 
+    text-align: right; 
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.options a {
+    color: #888;
+    text-decoration: none;
+}
+
+.options a:hover {
+    color: #ff7b00;
+}
+
+.new-user {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 15vh;
+}
+
+.login-btn {
+    background: linear-gradient(to left, #6a11cb, #2575fc);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 2em;
+    width: 60%;
+    height: 2.5em;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background: linear-gradient(to left, #2575fc, #6a11cb);
+}
+
+.new-user p {
+    color: #888;
+    font-size: 1rem;
+}
+
+.new-user a {
+    text-decoration: none;
+    color: rgb(36, 75, 234);
+}
+
+.new-user a:hover {
+    text-decoration: underline;
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90vw;
+        height: auto;
+    }
+    .header {
+        height: 20vh;
+    }
+    .header h2 {
+        font-size: 1.5rem;
+    }
+    .input-group input {
+        font-size: 0.9rem;
+    }
+    .login-btn {
+        width: 70%;
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .container {
+        width: 80vw;
+        height: 75vh;
+    }
+    .header {
+        height: 20vh;
+    }
+    .header h2 {
+        font-size: 1.8rem;
+    }
+    .input-group input {
+        font-size: 1rem;
+    }
+    .login-btn {
+        width: 50%;
+    }
+    .new-user p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1500px) {
+    .container {
+        width: 60vw;
+        height: 75vh;
+    }
+    .header {
+        height: 20vh;
+    }
+    .header h2 {
+        font-size: 2rem;
+    }
+    .input-group input {
+        font-size: 1rem;
+    }
+    .login-btn {
+        width: 40%;
+    }
+    .new-user p {
+        font-size: 1rem;
+    }
+}
+}
